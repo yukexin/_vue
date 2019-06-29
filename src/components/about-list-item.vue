@@ -1,0 +1,39 @@
+<style lang="less" scoped>
+.container {
+
+}
+</style>
+
+<template>
+  <div class="container">
+    <span class="title">{{ pObj.title }}</span>
+    <p v-for="(item,idx) in pObj.arr" v-bind:key="idx">{{ item }}</p>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "about-list-item",
+    data() {
+      return {};
+    },
+    props: {
+      pObj: Object,
+    },
+    components: {},
+    directives: {},
+    computed: {},
+    watch: {},
+    methods: {
+      loadData() {
+      }
+    },
+    onLoad(options) {
+      // options === this..$mp.query
+    },
+    created() {
+    },
+    mounted() {
+    }
+  }
+</script>
