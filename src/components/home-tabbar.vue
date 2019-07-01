@@ -9,7 +9,7 @@
     left: 0;
     top: 0;
     right: 0;
-    padding: 30px 100px;
+    padding: 30px 20px;
     color: @title-main-color;
 
     .title {
@@ -17,7 +17,7 @@
     }
     .right-box {
       .flex-r-around;
-      width: 250px;
+      /*width: 250px;*/
       .menu {
         .menu-title {
           margin-left: 2px;

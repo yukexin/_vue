@@ -1,6 +1,14 @@
 <style lang="less" scoped>
+  @import "../assets/index";
 .container {
-
+  .flex-c;
+  align-items: flex-start;
+  .title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  p {
+  }
 }
 </style>
 
