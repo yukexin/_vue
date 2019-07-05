@@ -35,8 +35,8 @@
     data() {
       return {
         aboutArr: [
-          { title: 'Blog', arr: ['本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。如有错误地方烦请指正。', '博客重点在于分享web前端开发知识，或涉其它。'] },
-          { title: 'Contact', arr: ['Name：林鑫', 'Company：步步高', 'Github：lin-xin', 'QQ：2981207131', 'Email：2981207131@qq.com'] },
+          { title: 'Blog', arr: ['本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。如有错误地方烦请指正。', '博客重点在于分享web前端、iOS移动端开发知识，或涉其它。'] },
+          { title: 'Contact', arr: ['Name：于可心', 'Company：XXX', 'Github：yukexin', 'QQ：693041866', 'Email：kexin6867@sina.com'] },
           { title: 'Donate', arr: [ '如果您觉得有文章能帮助到你，那就请作者喝杯咖啡吧!'] }
         ]
       };
