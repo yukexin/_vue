@@ -4,6 +4,7 @@ import index from '@/pages/index'
 import tag from '@/pages/tag'
 import about from '@/pages/about'
 import article from '@/pages/article'
+import domain from '@/pages/domain'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/article',
       name: 'article',
       component: article
+    },
+    {
+      path: '/domain',
+      name: 'domain',
+      component: domain
     }
   ]
 })

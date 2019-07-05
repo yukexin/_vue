@@ -17,7 +17,7 @@
     }
     .right-box {
       .flex-r-around;
-      /*width: 250px;*/
+      /*width: 200px;*/
       .menu {
         .menu-title {
           margin-left: 2px;
@@ -29,7 +29,7 @@
 
 <template>
   <div class="container">
-    <span class="title">得劲的博客</span>
+    <span class="title" v-on:click="indexTap">得劲的博客</span>
     <div class="right-box">
       <div v-for="(item,idx) in titles" v-bind:key="idx" v-on:click="menuTap(idx)" class="menu">
         <icon-font v-bind:icon-class="item.icon_class" />
@@ -45,7 +45,12 @@
     name: "home-tabbar",
     data() {
       return {
-        titles: [{ title: '首页', icon_class: 'icon-home', url: '/' }, { title: '标签', icon_class: 'icon-tag', url: '/tag' }, { title: '关于我', icon_class: 'icon-about', url: '/about' }]
+        titles: [
+          { title: '首页', icon_class: 'icon-home', url: '/' },
+          { title: '标签', icon_class: 'icon-tag', url: '/tag' },
+          { title: '域名', icon_class: 'icon-about', url: '/domain' },
+          { title: '关于我', icon_class: 'icon-about', url: '/about' },
+        ]
       };
     },
     props: {},
@@ -54,6 +59,9 @@
     computed: {},
     watch: {},
     methods: {
+      indexTap() {
+        this.$router.push('/')
+      },
       menuTap(idx) {
         // this.$router.push({path: '/about/order', query: {selected: "2"}});
         let path = this.titles[idx].url

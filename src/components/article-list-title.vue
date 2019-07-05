@@ -1,23 +1,26 @@
 <style lang="less" scoped>
   @import "../assets/index";
-  .container {
+  /*这里为什么穿透了？如果用container，和外层的合并了*/
+  .article-list-title {
     .flex-r-a;
-    border-bottom: solid 1px red;
+    z-index: 5;
+    height: 70px;
+    border-bottom: dashed 1px rgb(173,173,173);
     .point {
-      width: 20px;
-      height: 20px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
-      background: red;
+      background: rgb(173,173,173);
     }
     .title {
-      margin-left: 30px;
+      margin-left: 20px;
     }
   }
 </style>
 
 <template>
-  <div class="container">
-    <div class="point"></div>
+  <div class="article-list-title">
+    <span class="point"></span>
     <div class="title">09-03 实战计算器应用</div>
   </div>
 </template>
