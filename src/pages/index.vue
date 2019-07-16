@@ -27,9 +27,7 @@
     onLoad(options) {
       // options === this..$mp.query
     },
-    created() {
-    },
-    mounted() {
-    }
+    created() {},
+    mounted() {}
   }
 </script>
